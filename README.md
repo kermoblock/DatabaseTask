@@ -1,6 +1,7 @@
 # DatabaseTask
 
-<img width="1177" height="964" alt="{E6794C65-89A1-47D3-A650-EA2D4FEDC9F8}" src="https://github.com/user-attachments/assets/47627d01-7b34-432a-a26e-e8330c8511b0" />
+<img width="1091" height="1027" alt="{7C0BB906-6ABA-449A-A463-D00AB247D6FD}" src="https://github.com/user-attachments/assets/2cdf784d-4d32-4f7d-80da-83369bad2220" />
+
 
 
 
