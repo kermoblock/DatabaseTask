@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Crime
+    public class Research
     {
-        public int Id { get; set; }
-        [MaxLength(100)]
+        [Key]
+        public Guid Id { get; set; }
         public string Name { get; set; }
-        [MaxLength(200)]
         public string Description { get; set; }
-        public int Difficulty_Level { get; set; }
+        public int Price { get; set; }
+        public ResearchResult ResearchResult { get; set; }
+        public ICollection<Patient> Patient { get; set; } = new List<Patient>();
+
     }
 }

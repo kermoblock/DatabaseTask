@@ -7,13 +7,14 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Visitors
+    public class Medicine
     {
-        public int Id { get; set; }
-        [MaxLength(50)]
+        [Key]
+        public Guid Id { get; set; }
         public string Name { get; set; }
-        public int Personal_Number { get; set; }
-        public int Telphone_Number { get; set; }
-        public string Relation_To_The_Prisoner { get; set; }
+        public string Ingredients { get; set; }
+        public string Producer { get; set; }
+        public string Description { get; set; }
+
     }
 }

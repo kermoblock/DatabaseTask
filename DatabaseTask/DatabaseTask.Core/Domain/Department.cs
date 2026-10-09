@@ -7,15 +7,12 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Block
+    public class Department
     {
-        public int Id { get; set; }
-        public Prison Prison { get; set; }
-        public int Number { get; set; }
-
-        [MaxLength(60)]
+        [Key]
+        public Guid Id { get; set; }
         public string Name { get; set; }
-
-        public int Security_Level { get; set; }
+        public int Floor { get; set; }
+        public int Phone { get; set; }
     }
 }

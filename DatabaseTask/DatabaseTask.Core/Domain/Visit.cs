@@ -9,14 +9,14 @@ namespace DatabaseTask.Core.Domain
 {
     public class Visit
     {
-        public int Id { get; set; }
-
-        public Visitors Visitors { get; set; }
-        public Prisoners Prisoners { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public DateTime Date { get; set; }
-        public int Start_Time { get; set; }
-        public int Finish_Time { get; set; }
-        [MaxLength(60)]
-        public string Visiting_Status { get; set; }
+        public TimeOnly Time { get; set; }
+        public string Reason { get; set; }
+        public string Summary { get; set; }
+        public ICollection<Employee> Employee { get; set; } = new List<Employee>();
+        public ICollection<Patient> Patient { get; set; } = new List<Patient>();
+
     }
 }

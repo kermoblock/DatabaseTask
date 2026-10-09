@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace DatabaseTask.Core.Domain
 {
-    public class Shift
+    public class ResearchResult
     {
-        public int Id { get; set; }
-        public Guards Guards { get; set; }
-        public int Start_time { get; set; }
-        public int Finish_time { get; set; }
+        [Key]
+        public Guid Id { get; set; }
         public DateTime Date { get; set; }
+        public string Result { get; set; }
     }
 }
